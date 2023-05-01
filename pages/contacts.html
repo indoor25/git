@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="bg-img"></div>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Головна</a></li>
+          <li class="nav-item"><a class="nav-link" href="articles.html">Статті</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link  nav-link-active" href="contacts.html">Контакти</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+          <li class="nav-item"><a class="nav-link" href="page-nav.html">Навігація</a></li>
+          <li class="nav-item"><a class="nav-link" href="registration.html">Реєстрація</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="bg-center">
+
+        <h1 class="title-border">Контакти</h1>
+
+        <div>
+          <h2>Адреса організації</h2>
+          <p>
+            Індекс 49000 <br>
+            м. Дніпро, вул. Михайла Грушевського 23 <br>
+            Україна
+          </p>
+        </div>
+
+        <div class="contact-map">
+          <h2>Наше розташування</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.952141006492!2d35.03604378815653!3d48.45744779722971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe320785c4c59%3A0x11133eed571725fa!2z0YPQuy4g0JzQuNGF0LDQuNC70LAg0JPRgNGD0YjQtdCy0YHQutC-0LPQviwgMjMsINCU0L3QtdC_0YAsINCU0L3QtdC_0YDQvtC_0LXRgtGA0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNDkwMDA!5e0!3m2!1sru!2sde!4v1681335745100!5m2!1sru!2sde"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="group-form">
+          <form action="https://tests.fomenko.top/echo/index.php" method="get">
+            <fieldset>
+              <legend>Форма зворотнього зв'язку</legend>
+              <div class="input-style">
+                <label for="name">Ваше ім'я</label>
+                <input class="input-name" type="text" id="name" name="name" placeholder="ім'я">
+              </div>
+
+              <div class="input-style">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email">
+              </div>
+
+              <div class="input-style">
+                <label for="tel">Телефон</label>
+                <input type="tel" id="tel" name="tel" placeholder="+380 50 123 52 52">
+              </div>
+
+              <div>
+                <label for="callback-text">Зворотній зв'язок</label>
+                <textarea name="callback-text" id="callback-text" cols="40" rows="5"
+                  placeholder="Напишіть запитання"></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Оберіть дію</legend>
+              <div class="input-style">
+                <input class="input-btn" type="submit" value="Зареєструватися">
+              </div>
+              <div class="iput-style">
+                <input class="input-btn" type="reset" value="Скинути">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>&copy; Viacheslav Kornilov</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --main-color: #0099ff;
+  --main-text-color: #ffffff;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  color: var(--main-color);
+}
+
+h2 {
+  padding-left: 40px;
+  font-size: 1.5rem;
+  color: #00406b;
+}
+
+h3,
+figcaption {
+  padding-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #00406b;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--main-color);
+}
+
+.title-border {
+  border: 1px solid #555a5d8d;
+  border-radius: 20px;
+}
+
+.bg-img {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-image: url(../img/colored-water-drops.jpg);
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding: 0 30px;
+  background-color: var(--main-color);
+}
+
+.bg-center {
+  min-height: 100vh;
+  padding: 20px 20px 100px 20px;
+  background-color: #f0f8ff;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 100px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.nav-item {
+  padding: 0 12px 0 10px;
+  border-right: 2px solid var(--main-text-color);
+}
+
+.nav-item:last-of-type {
+  border-right: none;
+}
+
+.nav-link {
+  display: block;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  border-bottom: 2px solid;
+  border-color: transparent;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid var(--main-text-color);
+  transition: 0.20s;
+}
+
+.nav-link-active {
+  border-bottom: 2px solid #d31b1b;
+}
+
+/* Блок страницы articles */
+.article-title {
+  display: block;
+  border-bottom: 2px dotted #555a5d8d;
+}
+
+.article-title a {
+  color: #00406b;
+  font-size: 1.5rem;
+}
+
+.article-short-discr {
+  padding: 10px 7px 15px 7px;
+  color: var(--main-text-color);
+  background-color: #181b1db3;
+}
+
+.article-read-more {
+  color: #ffd501;
+  text-decoration: underline;
+}
+
+.article-read-more:hover {
+  text-decoration: none;
+  color: #00e4b6;
+  cursor: pointer;
+}
+
+.article-go-comment {
+  color: #b8860b;
+}
+
+.article-go-comment:hover {
+  color: #00e4b6;
+  cursor: pointer;
+}
+
+/* Стили для статей */
+.article-body {
+  padding-bottom: 40px;
+}
+
+.article-body p::first-letter {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #b8860b;
+}
+
+.comment-body {
+  padding: 40px;
+  margin: 50px 20px;
+  border: 1px solid var(--main-color);
+  border-radius: 25px;
+}
+
+.post-author {
+  width: fit-content;
+  padding: 5px 20px;
+  background-color: var(--main-color);
+  color: var(--main-text-color);
+}
+
+/* стили для списков категорий */
+.main-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  list-style: url(../img/icon/down-icon-main.png);
+  background-color: var(--main-color);
+  color: var(--main-text-color);
+  border-radius: 25px;
+}
+
+.sublist {
+  width: fit-content;
+  padding: 5px 35px;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: 400;
+  list-style: url(../img/icon/right-icon-sublist.png);
+  background-color: #f0f8ff;
+  color: #b8860b;
+}
+
+li.new-product::after {
+  content: "new";
+  padding: 0 2px;
+  margin-left: 3px;
+  font-size: 0.8rem;
+  background-color: #FF9900;
+  color: var(--main-text-color);
+}
+
+/* стили для галереи */
+.bg-img-galerry {
+  position: fixed;
+  z-index: -1;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: url(../img/textura.jpg);
+  background-repeat: repeat;
+}
+
+.gallery-view {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.gallery-view img {
+  border: 5px solid var(--main-color);
+}
+
+.gallery-view img:hover {
+  border: 5px solid;
+  border-color: transparent;
+}
+
+/* стили для постраничной навигации */
+.position-marker {
+  position: absolute;
+  margin-top: -120px;
+}
+
+.inside-nav a {
+  display: inline-block;
+  margin: 0 20px;
+  font-weight: 400;
+}
+
+.return-top {
+  margin-bottom: 20px;
+}
+
+/* стили страница контактов */
+.contact-map {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* стили форм */
+fieldset {
+  max-width: 500px;
+  margin: auto;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.2em;
+  border: 2px solid;
+  border-radius: 3px;
+}
+
+input[type="file"] {
+  margin-bottom: initial;
+  border: initial;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+legend {
+  text-align: center;
+  font-weight: 400;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100px;
+  max-height: 150px;
+  resize: vertical;
+  padding: 10px 15px;
+}
+
+.input-style {
+  margin-bottom: 15px;
+}
+
+.input-name {
+  text-transform: capitalize;
+}
+
+.style-input-sm:hover {
+  border: 2px dashed var(--main-color);
+}
+
+.style-input-sm,
+.style-input-sm input {
+  width: auto;
+  border: 2px dashed;
+  border-color: transparent;
+}
+
+.input-btn:active {
+  background-color: #ffd501a5;
+}
+
+/* стили для footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: var(--main-color);
+  color: var(--main-text-color);
+}

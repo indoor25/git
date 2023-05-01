@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="bg-img"></div>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Головна</a></li>
+          <li class="nav-item"><a class="nav-link" href="articles.html">Статті</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакти</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+          <li class="nav-item"><a class="nav-link" href="page-nav.html">Навігація</a></li>
+          <li class="nav-item"><a class="nav-link  nav-link-active" href="registration.html">Реєстрація</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="bg-center">
+
+        <h1 class="title-border">Реєстрація</h1>
+
+        <div class="group-form">
+          <form action="https://tests.fomenko.top/echo/index.php" method="get">
+            <fieldset>
+              <legend> Дані користувача</legend>
+              <div class="input-style">
+                <label for="full-name">Прізвище та ім'я</label>
+                <input class="input-name" type="text" id="full-name" name="full-name"
+                  placeholder="введіть прізвище та ім'я">
+              </div>
+              <div class="input-style">
+                <label for="passw">Пароль</label>
+                <input type="password" id="passw" name="passw" placeholder="Введіть пароль">
+              </div>
+              <div class="input-style">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Введіть email">
+              </div>
+              <div class="input-style">
+                <label for="site">Адреса сайту</label>
+                <input type="url" id="site" name="site" placeholder="Введіть url свого сайту"
+                  value="https://mysite.name">
+              </div>
+              <div class="input-style">
+                <label for="birthday">Дата народження</label>
+                <input type="date" id="birthday" name="birthday">
+              </div>
+              <div class="input-style">
+                <label for="gender">Оберіть стать</label>
+                <select id="gender" name="gender">
+                  <option disabled selected>Оберіть стать</option>
+                  <option value="male">Чоловік</option>
+                  <option value="female">Жінка</option>
+                </select>
+              </div>
+              <div class="input-style">
+                <label for="photo">Додати фото</label>
+                <input type="file" id="photo" name="photo">
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Виберіть улюбленну кухню</legend>
+              <div class="style-input-sm">
+                <input type="checkbox" id="kitchen-ua" name="kitchen-ua">
+                <label for="kitchen-ua">Українська</label>
+              </div>
+              <div class="style-input-sm">
+                <input type="checkbox" id="kitchen-it" name="kitchen-it">
+                <label for="kitchen-it">Італійська</label>
+              </div>
+              <div class="style-input-sm">
+                <input type="checkbox" id="kitchen-tr" name="kitchen-tr">
+                <label for="kitchen-tr">Турецька</label>
+              </div>
+              <div class="style-input-sm">
+                <input type="checkbox" id="kitchen-gr" name="kitchen-gr">
+                <label for="kitchen-gr">Грузинська</label>
+              </div>
+              <div class="style-input-sm">
+                <input type="checkbox" id="kitchen-ch" name="kitchen-ch">
+                <label for="kitchen-ch">Китайська</label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Про себе</legend>
+              <div>
+                <label for="about-me">Стисло про себе</label>
+                <textarea id="about-me" name="about-me" rows="5" cols="50"
+                  placeholder="Напишіть коротко про себе у довільній формі"></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Оберіть дію</legend>
+              <div class="input-style">
+                <input class="input-btn" type="submit" value="Зареєструватися">
+              </div>
+              <div class="iput-style">
+                <input class="input-btn" type="reset" value="Скинути">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>&copy; Viacheslav Kornilov</div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
